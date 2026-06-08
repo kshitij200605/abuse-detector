@@ -1,0 +1,21 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+websockets>=12.0
+motor>=3.5.0
+pymongo>=4.8.0
+pydantic>=2.9.0
+pydantic-settings>=2.4.0
+python-dotenv>=1.0.1
+langdetect>=1.0.9
+httpx>=0.27.0
+reportlab>=4.2.0
+python-multipart>=0.0.9
+
+# ── Level 2: Real API Integrations ──────────────────────────────
+# Reddit live stream
+praw>=7.7.0
+
+# Discord bot
+discord.py>=2.3.0
+
+# Async HTTP (already included via httpx above for HF + Perspective + LibreTranslate)

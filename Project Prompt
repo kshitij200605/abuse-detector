@@ -1,0 +1,691 @@
+ AI-Powered Real-Time Social Media Harassment Detection, Autonomous Moderation & Digital Forensics Platform
+
+Build a production-grade cybersecurity + AI web platform named “SentinelAI” that automatically detects harassment, cyberbullying, threats, hate speech, sexual harassment, coercion, stalking, abusive behavior, and toxic communication across social-media-style platforms in real time without requiring users to manually upload comments, screenshots, or URLs.
+
+The platform must function as:
+
+* an AI moderation engine
+* a cybersecurity monitoring system
+* a multilingual abuse detection platform
+* a digital forensics investigation suite
+* a SOC-style cybercrime monitoring dashboard
+
+The project should combine:
+
+* AI moderation
+* multilingual NLP
+* real-time streaming analysis
+* cybersecurity
+* digital forensics
+* OSINT
+* autonomous moderation
+* cyber-law-aware decision systems
+
+The final platform must feel enterprise-grade, futuristic, scalable, intelligent, and visually premium.
+
+---
+
+## PRIMARY OBJECTIVE
+
+Users should NOT:
+
+* upload screenshots
+* manually paste comments
+* manually enter URLs
+* manually submit messages one-by-one
+
+Instead, the system should:
+
+1. Automatically fetch comments/messages/posts in real time.
+2. Detect abusive behavior autonomously.
+3. Understand context, slang, sarcasm, and multilingual abuse.
+4. Translate content internally.
+5. Calculate toxicity and legal risk.
+6. Automatically take moderation actions.
+7. Preserve forensic evidence.
+8. Generate investigation reports.
+9. Display everything in a professional real-time dashboard.
+
+---
+
+## SUPPORTED PLATFORMS
+
+1. Reddit (REAL API INTEGRATION)
+
+* Use Reddit API with PRAW
+* Stream live subreddit comments
+* Monitor comments automatically in real time
+* Perform moderation analysis continuously
+
+2. Discord (REAL API INTEGRATION)
+
+* Use Discord Bot API
+* Monitor live server chats
+* Detect harassment in real time
+* Trigger autonomous moderation
+
+3. Instagram-like Frontend (SIMULATED UI)
+
+* Build a realistic Instagram-style interface
+* Simulate live comment feeds
+* AI moderation should work automatically
+* No manual uploads
+
+4. WhatsApp-like Frontend (SIMULATED UI)
+
+* Real-time chat interface
+* Simulated live conversations
+* AI detects harassment automatically
+* Moderation actions update instantly
+
+The backend moderation engine should work uniformly across all platforms.
+
+---
+
+## CORE AI DETECTION CAPABILITIES
+
+The AI must detect:
+
+* cyberbullying
+* harassment
+* sexual harassment
+* coercion
+* threats
+* extortion
+* hate speech
+* stalking
+* emotional abuse
+* suicidal encouragement
+* violent threats
+* abusive slang
+* Gen-Z slang abuse
+* sarcasm-based toxicity
+* manipulative behavior
+* intimidation
+* repeated offender patterns
+
+Example phrases:
+
+* “tu 6000 mai aayegi idhar”
+* “marr ja”
+* “go kill yourself”
+* “teri aukaat kya hai”
+* “slut”
+* “I’ll find you”
+* “you deserve to die”
+
+The AI must NOT rely only on keyword matching.
+
+The AI must understand:
+
+* sentence meaning
+* multilingual slang
+* tone
+* conversation history
+* emotional context
+* repeated behavior
+* sarcasm
+* relationship between users
+
+---
+
+## MULTILINGUAL NLP ENGINE
+
+Support:
+
+* English
+* Hindi
+* Hinglish
+* Urdu
+* Telugu
+* Tamil
+* Bengali
+* mixed-language conversations
+
+The system should:
+
+1. Detect language automatically.
+2. Translate internally.
+3. Analyze translated content.
+4. Preserve original text.
+
+Use:
+
+* language detection
+* multilingual transformer models
+* translation APIs
+* contextual NLP
+
+---
+
+## REAL-TIME STREAMING ENGINE
+
+The system should continuously listen to:
+
+* Reddit comments
+* Discord messages
+* simulated Instagram comments
+* simulated WhatsApp chats
+
+WITHOUT requiring:
+
+* page refresh
+* manual uploads
+* manual moderation requests
+
+Use:
+
+* WebSockets
+* Socket.IO
+* async event streams
+
+All moderation events must appear instantly on the dashboard.
+
+---
+
+## AUTONOMOUS MODERATION ENGINE
+
+The system must automatically decide moderation actions.
+
+Severity levels:
+
+LOW:
+
+* soft warning
+* AI notice
+
+MEDIUM:
+
+* hide content
+* temporary mute
+* warning strike
+
+HIGH:
+
+* auto delete
+* account strike
+* moderation escalation
+
+CRITICAL:
+
+* permanent ban
+* forensic preservation
+* cyber-law escalation
+* incident report generation
+
+---
+
+## CYBER LAW RISK ENGINE
+
+Create a feature called:
+“Cyber Law Risk Meter”
+
+The engine should:
+
+* estimate legal severity
+* map harmful content to cybercrime categories
+* generate legal-risk analysis
+* show country-aware moderation suggestions
+
+For India:
+
+* IT Act
+* IPC sections
+
+Examples:
+
+* threats
+* stalking
+* hate speech
+* extortion
+* sexual harassment
+
+Display:
+
+* severity score
+* legal category
+* escalation recommendation
+* cyber-risk level
+
+---
+
+## CONTEXT-AWARE AI SYSTEM
+
+The AI must distinguish:
+
+1. Friendly slang
+2. Real harassment
+
+Example:
+“marr ja 😂”
+between friends should score lower than:
+“go kill yourself you useless idiot”
+
+The AI should use:
+
+* contextual embeddings
+* sentiment analysis
+* behavioral analysis
+* relationship context
+* conversation history
+* AI confidence scoring
+
+---
+
+## OFFENDER REPUTATION ENGINE
+
+Track repeated offenders.
+
+Each user profile should contain:
+
+* toxicity history
+* repeat offense count
+* risk score
+* moderation history
+* escalation history
+* behavior trend graph
+
+Repeated abusive behavior should increase punishment severity automatically.
+
+---
+
+## AI EXPLAINABILITY SYSTEM
+
+For every flagged message display:
+
+* why it was flagged
+* toxicity score
+* abuse category
+* translated text
+* detected language
+* AI explanation
+* moderation action
+* confidence percentage
+
+Example:
+“Detected coercive sexual harassment in Hinglish.”
+
+---
+
+## EVIDENCE LOCKER
+
+Store:
+
+* username
+* platform
+* timestamp
+* original message
+* translated message
+* toxicity score
+* AI explanation
+* moderation action
+* legal risk level
+* evidence hash
+
+Use MongoDB.
+
+---
+
+## DIGITAL FORENSICS MODULE
+
+Create a dedicated:
+“Digital Forensics & Investigation Center”
+
+The module should:
+
+* preserve abusive evidence
+* perform forensic analysis
+* generate cybercrime investigation reports
+* visualize offender relationships
+* support SOC workflows
+
+---
+
+## KALI LINUX TOOL INTEGRATION
+
+Integrate support for Kali Linux cybersecurity tools.
+
+Possible tools:
+
+1. Maltego
+
+* offender relationship mapping
+* investigation graphs
+
+2. Sherlock
+
+* username footprint analysis
+
+3. SpiderFoot
+
+* OSINT automation
+
+4. theHarvester
+
+* metadata intelligence gathering
+
+5. Wireshark
+
+* packet analysis demonstration
+
+6. Autopsy
+
+* forensic evidence simulation
+
+7. YARA
+
+* harassment pattern signatures
+
+8. Elasticsearch + Kibana
+
+* forensic dashboards
+* incident analytics
+
+9. Metagoofil
+
+* metadata extraction
+
+---
+
+## FORENSIC EVIDENCE PIPELINE
+
+When abuse is detected:
+
+1. Save original message
+2. Save translated message
+3. Save timestamps
+4. Save platform metadata
+5. Save toxicity score
+6. Save AI explanation
+7. Save moderation action
+8. Generate evidence hash
+9. Store forensic logs
+
+---
+
+## CHAIN OF CUSTODY SYSTEM
+
+Implement:
+
+* SHA-256 evidence hashing
+* tamper detection
+* immutable logs
+* timestamp verification
+* forensic audit trails
+
+This should simulate real digital forensic procedures.
+
+---
+
+## THREAT INTELLIGENCE ENGINE
+
+Detect:
+
+* coordinated harassment campaigns
+* hate raids
+* spam attacks
+* repeat offender clusters
+* behavioral anomalies
+
+Use:
+
+* graph analysis
+* anomaly detection
+* behavioral intelligence
+* AI-based threat scoring
+
+---
+
+## FORENSIC REPORT GENERATOR
+
+Generate downloadable PDF reports containing:
+
+* offender details
+* abusive content
+* toxicity analysis
+* translations
+* timestamps
+* AI explanations
+* legal risk analysis
+* evidence hashes
+* moderation history
+* escalation timeline
+
+---
+
+## SOC ANALYST DASHBOARD
+
+Create a dedicated SOC-style dashboard.
+
+Sections:
+
+1. Live moderation feed
+2. Incident alerts
+3. Threat analytics
+4. Toxicity heatmap
+5. Offender leaderboard
+6. Language distribution
+7. Legal escalation center
+8. Evidence locker
+9. Investigation queue
+10. AI confidence scores
+11. Threat timeline
+12. Real-time alerts
+
+---
+
+## UI/UX REQUIREMENTS
+
+IMPORTANT:
+DO NOT USE DARK THEME.
+
+The UI must feel:
+
+* modern
+* clean
+* premium
+* futuristic
+* enterprise SaaS style
+
+Use:
+
+* white backgrounds
+* glassmorphism
+* smooth gradients
+* rounded cards
+* subtle shadows
+* elegant typography
+* soft animations
+* responsive layouts
+
+Frontend stack:
+
+* React
+* TailwindCSS
+* Framer Motion
+
+The design should resemble:
+
+* modern AI SaaS products
+* premium analytics dashboards
+* enterprise cybersecurity platforms
+
+NOT:
+
+* hacker-style UI
+* terminal-heavy UI
+* dark cyberpunk theme
+
+---
+
+## FRONTEND FEATURES
+
+Build:
+
+* Instagram-like feed UI
+* WhatsApp-like chat UI
+* real-time moderation panels
+* analytics dashboards
+* live alerts
+* offender profile pages
+* evidence viewers
+* AI explanation popups
+* interactive charts
+* moderation controls
+
+---
+
+## BACKEND REQUIREMENTS
+
+Backend:
+
+* FastAPI preferred
+  OR
+* Flask
+
+Features:
+
+* async processing
+* REST APIs
+* WebSockets
+* modular architecture
+* scalable services
+
+---
+
+## AI/ML STACK
+
+Use:
+
+* Perspective API
+* HuggingFace transformers
+* toxic-bert
+* multilingual NLP models
+* sentiment analysis
+* contextual classification
+
+Moderation pipeline:
+
+1. detect language
+2. translate
+3. classify toxicity
+4. analyze context
+5. calculate severity
+6. determine action
+7. generate explanation
+
+---
+
+## FREE APIS ONLY
+
+Use only free/free-tier APIs.
+
+Allowed:
+
+* Reddit API
+* Discord API
+* Perspective API
+* LibreTranslate
+* HuggingFace
+
+Avoid paid APIs.
+
+---
+
+## DATABASE
+
+Use:
+
+* MongoDB Atlas
+
+Store:
+
+* moderation logs
+* evidence
+* offender history
+* AI results
+* forensic data
+
+---
+
+## PROJECT ARCHITECTURE
+
+Live Streams
+↓
+Language Detection
+↓
+Translation Layer
+↓
+Context-Aware AI
+↓
+Toxicity Engine
+↓
+Severity Engine
+↓
+Autonomous Moderation
+↓
+Forensic Evidence Storage
+↓
+Threat Intelligence
+↓
+SOC Dashboard
+
+##
+
+---
+
+## DEPLOYMENT
+
+Frontend:
+
+* Vercel
+
+Backend:
+
+* Render or Railway
+
+Database:
+
+* MongoDB Atlas
+
+Provide:
+
+* Docker support
+* setup.sh
+* requirements.txt
+* .env.example
+
+---
+
+## EXPECTED FINAL RESULT
+
+The final platform should feel like:
+
+* an enterprise AI moderation system
+* a SOC monitoring platform
+* a cybercrime investigation suite
+* a multilingual harassment detection engine
+* a real-time cybersecurity SaaS platform
+
+The final project should strongly showcase:
+
+* cybersecurity
+* AI engineering
+* NLP
+* digital forensics
+* OSINT
+* real-time systems
+* autonomous moderation
+* cyber law awareness
+* professional UI/UX
+* scalable architecture
+
+The platform should be impressive for:
+
+* hackathons
+* mini projects
+* internships
+* cybersecurity portfolios
+* AI showcases
+* SOC analyst demonstrations
+* recruiter evaluations

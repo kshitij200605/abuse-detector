@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f8faff;
+  color: #1a1a2e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7d7fe;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
+}
+
+/* ── Glassmorphism utility ─────────────────────────────────── */
+@layer components {
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl border border-white/60;
+  }
+
+  .glass-card {
+    @apply bg-white/90 backdrop-blur-md border border-white/70 rounded-2xl shadow-card;
+  }
+
+  .glass-dark {
+    @apply bg-slate-900/80 backdrop-blur-xl border border-white/10;
+  }
+
+  /* Severity badges */
+  .badge-critical {
+    @apply bg-danger-100 text-danger-700 border border-danger-200 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-high {
+    @apply bg-orange-100 text-orange-700 border border-orange-200 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-medium {
+    @apply bg-amber-100 text-amber-700 border border-amber-200 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-low {
+    @apply bg-cyber-100 text-cyber-700 border border-cyber-200 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-clean {
+    @apply bg-slate-100 text-slate-600 border border-slate-200 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-none {
+    @apply bg-slate-100 text-slate-500 border border-slate-200 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+
+  /* Platform badges */
+  .platform-reddit    { @apply bg-orange-100 text-orange-700; }
+  .platform-discord  { @apply bg-indigo-100 text-indigo-700; }
+  .platform-instagram{ @apply bg-pink-100 text-pink-700; }
+  .platform-whatsapp { @apply bg-green-100 text-green-700; }
+
+  /* Stat cards */
+  .stat-card {
+    @apply glass-card p-6 transition-all duration-300 hover:shadow-glass hover:-translate-y-0.5 cursor-default;
+  }
+
+  /* Live pulse dot */
+  .live-dot {
+    @apply inline-block w-2 h-2 rounded-full bg-cyber-500 mr-2;
+    animation: livePulse 1.5s ease-in-out infinite;
+  }
+
+  /* Feed item entrance */
+  .feed-item-enter {
+    animation: feedEnter 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+/* ── Custom animations ─────────────────────────────────────── */
+@keyframes livePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(1.3); }
+}
+
+@keyframes feedEnter {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f4ff 25%, #e0eaff 50%, #f0f4ff 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ── Sidebar ───────────────────────────────────────────────── */
+.sidebar-link {
+  @apply flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 font-medium text-sm
+         transition-all duration-200 hover:bg-sentinel-50 hover:text-sentinel-600;
+}
+.sidebar-link.active {
+  @apply bg-sentinel-50 text-sentinel-700 font-semibold;
+  box-shadow: inset 3px 0 0 #6366f1;
+}
+
+/* ── Toxicity bar ──────────────────────────────────────────── */
+.toxicity-bar {
+  @apply h-2 rounded-full bg-slate-100 overflow-hidden;
+}
+.toxicity-fill {
+  @apply h-full rounded-full transition-all duration-700;
+}
+
+/* ── Gradient header ───────────────────────────────────────── */
+.page-header-gradient {
+  background: linear-gradient(135deg, #667eea15 0%, #764ba210 50%, #f093fb08 100%);
+  border-bottom: 1px solid rgba(99,102,241,0.1);
+}
+
+/* ── Scrollbar hide utility (for horizontal scroll rows) ───── */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Discord dark scrollbar ────────────────────────────────── */
+.discord-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.discord-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.discord-scroll::-webkit-scrollbar-thumb {
+  background: #1e1f22;
+  border-radius: 4px;
+}
+
+
